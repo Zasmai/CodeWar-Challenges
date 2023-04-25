@@ -16,6 +16,14 @@ function setAlarm(employed, vacation){
        return false;
      }
      
+     else if (employed === true && vacation === false) {
+       return true;
+     }
+     
+     else if (employed === false && vacation === false) {
+       return false;
+     }
+     
      else {
        return true;
      }
